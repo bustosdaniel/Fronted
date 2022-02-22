@@ -1,0 +1,94 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark:#232830;
+    --Very-light-pink: #C7C7C7;
+    --Text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--Very-light-pink);
+}
+.menu{
+    display: none;
+}
+.logo{
+    width: 100px;
+}
+.left ul,
+.right ul{
+    list-style: none;
+    margin-bottom: 24px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.left{
+    display: flex;
+    margin: 12px;
+}
+.right{
+    margin-top: 13px;
+}
+.left ul{
+    margin-left: 12px;
+}
+.left ul li a,
+.right ul li a{
+    text-decoration: none;
+    color: var(--Very-light-pink);
+    border: 1px solid var(--white);
+    padding: 15px;
+    border-radius: 8px;
+}
+.left ul li a:hover,
+.right ul li a:hover{
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+}
+.email{
+    color: var(--Very-light-pink);
+    font-size: var(--sm);
+    margin-right: 10px;
+}
+.shopping-cart div{
+    position: relative;
+}
+.shopping-cart div{
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 640px){
+    .menu{
+        display:block
+    }
+    .left ul{
+        display: none;
+    }
+    .email{
+        display: none;
+    }
+}
